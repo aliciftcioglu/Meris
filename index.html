@@ -10,29 +10,12 @@
   <link rel="stylesheet" href="assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/libs/aos-master/dist/aos.css">
   <link rel="stylesheet" href="assets/css/styles.css" />
-
-  <style>
-    /* Bozuk Video Yerine Çalışan Modern Biyoteknoloji Banner Arka Planı */
-    .banner-fallback-bg {
-      background: radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.25) 0%, rgba(15, 23, 42, 0.95) 60%, #0b1120 100%), #0f172a;
-      background-size: cover;
-      background-position: center;
-    }
-    .animate-spin-custom {
-      animation: spinLeaf 10s linear infinite;
-      display: inline-block;
-    }
-    @keyframes spinLeaf {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-  </style>
 </head>
 
 <body>
 
   <!-- Header -->
-  <header class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100" style="z-index: 1030;">
+  <header class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100">
     <div class="container">
       <div class="header-wrapper d-flex align-items-center justify-content-between">
         <div class="logo">
@@ -44,60 +27,50 @@
 
           <div class="btn-group">
             <button
-              class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-white rounded-circle shadow-sm"
+              class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-white rounded-circle"
               type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
-              <!-- Hamburger Menü SVG -->
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-              </svg>
+              <iconify-icon icon="solar:hamburger-menu-line-duotone" class="menu-icon fs-8 text-dark"></iconify-icon>
             </button>
-            <ul class="dropdown-menu dropdown-menu-end p-4 shadow-lg border-0" style="min-width: 320px;">
+            <ul class="dropdown-menu dropdown-menu-end p-4">
               <div class="d-flex flex-column gap-6">
                 <div class="hstack justify-content-between border-bottom pb-6">
-                  <p class="mb-0 fs-5 text-dark fw-bold">Navigation</p>
+                  <p class="mb-0 fs-5 text-dark">Navigation</p>
                   <button type="button" class="btn-close opacity-75" aria-label="Close"></button>
                 </div>
                 <div class="d-flex flex-column gap-3">
                   <ul class="header-menu list-unstyled mb-0 d-flex flex-column gap-2">
                     <li class="header-item">
-                      <a href="#home" class="header-link active hstack gap-2 fs-7 fw-bold text-dark text-decoration-none">
-                        <svg class="animate-spin-custom" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
-                        Home
+                      <a href="#home" class="header-link active hstack gap-2 fs-7 fw-bold text-dark">
+                        <img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Home
                       </a>
                     </li>
                     <li class="header-item">
-                      <a href="#about" class="header-link hstack gap-2 fs-7 fw-bold text-dark text-decoration-none">
-                        <svg class="animate-spin-custom" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
-                        About Us
+                      <a href="#about" class="header-link hstack gap-2 fs-7 fw-bold text-dark">
+                        <img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">About Us
                       </a>
                     </li>
                     <li class="header-item">
-                      <a href="#network" class="header-link hstack gap-2 fs-7 fw-bold text-dark text-decoration-none">
-                        <svg class="animate-spin-custom" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
-                        Commercial Reach
+                      <a href="#network" class="header-link hstack gap-2 fs-7 fw-bold text-dark">
+                        <img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Distribution Network
                       </a>
                     </li>
                     <li class="header-item">
-                      <a href="#solutions" class="header-link hstack gap-2 fs-7 fw-bold text-dark text-decoration-none">
-                        <svg class="animate-spin-custom" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
-                        Biosolutions
+                      <a href="#solutions" class="header-link hstack gap-2 fs-7 fw-bold text-dark">
+                        <img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Biosolutions
                       </a>
                     </li>
                     <li class="header-item">
-                      <a href="#contact" class="header-link hstack gap-2 fs-7 fw-bold text-dark text-decoration-none">
-                        <svg class="animate-spin-custom" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
-                        Contact
+                      <a href="#contact" class="header-link hstack gap-2 fs-7 fw-bold text-dark">
+                        <img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Contact
                       </a>
                     </li>
                   </ul>
                   <div class="hstack gap-3">
-                    <a href="#contact" class="btn btn-dark text-white fs-6 bg-dark px-3 py-2 w-100 hstack justify-content-center text-decoration-none">Partner With Us</a>
+                    <a href="#contact" class="btn btn-dark text-white fs-6 bg-dark px-3 py-2 w-100 hstack justify-content-center">Partner With Us</a>
                   </div>
                 </div>
                 <div class="d-flex flex-column gap-1 pt-2 border-top">
-                  <a class="fs-7 text-dark fw-bold text-decoration-none" href="mailto:aliciftcioglu.tr@gmail.com">aliciftcioglu.tr@gmail.com</a>
+                  <a class="fs-7 text-dark fw-bold" href="mailto:aliciftcioglu.tr@gmail.com">aliciftcioglu.tr@gmail.com</a>
                   <p class="mb-0 fs-8 text-dark opacity-75">Suite 16 07230, Guzeloluk 2107 No 29/1 Muratpasa Antalya Turkiye</p>
                 </div>
               </div>
@@ -112,13 +85,16 @@
   <div class="page-wrapper overflow-hidden">
 
     <!-- Banner Section -->
-    <section class="banner-section position-relative d-flex align-items-end min-vh-100 banner-fallback-bg" id="home">
+    <section class="banner-section position-relative d-flex align-items-end min-vh-100" id="home">
+      <video class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" autoplay muted loop playsinline>
+        <source src="assets/images/backgrounds/banner-video.mp4" type="video/mp4" />
+      </video>
       <div class="container">
         <div class="d-flex flex-column gap-4 pb-8 position-relative z-1">
           <div class="row align-items-center">
             <div class="col-xl-6">
               <div class="d-flex align-items-center gap-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                <svg class="animate-spin-custom flex-shrink-0" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                <img src="assets/images/svgs/primary-leaf.svg" alt="" class="img-fluid animate-spin">
                 <p class="mb-0 text-white fs-5 text-opacity-80">
                   Advancing sustainable agriculture with <span class="text-primary">next-generation biopesticides</span> and resilient commercial networks.
                 </p>
@@ -127,9 +103,9 @@
           </div>
           <div class="d-flex align-items-end gap-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
             <h1 class="mb-0 fs-16 text-white lh-1">Meris Bio</h1>
-            <a href="#about" class="p-1 ps-7 bg-primary rounded-pill text-decoration-none">
-              <span class="bg-white round-52 rounded-circle d-flex align-items-center justify-content-center shadow-sm">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+            <a href="#about" class="p-1 ps-7 bg-primary rounded-pill">
+              <span class="bg-white round-52 rounded-circle d-flex align-items-center justify-content-center">
+                <iconify-icon icon="lucide:arrow-down" class="fs-8 text-dark"></iconify-icon>
               </span>
             </a>
           </div>
@@ -162,4 +138,416 @@
               </div>
               <div class="row">
                 <div class="col-md-6 col-lg-4 mb-7 mb-lg-0">
-                  <div class="d-flex flex-column gap-6 pt-9 border-top" data-aos="fade-up" data-aos-delay="200"
+                  <div class="d-flex flex-column gap-6 pt-9 border-top" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <h2 class="mb-0 fs-14">80K+</h2>
+                    <p class="mb-0">Hectares protected cultivation reach across Turkish greenhouses</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-7 mb-lg-0">
+                  <div class="d-flex flex-column gap-6 pt-9 border-top" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    <h2 class="mb-0 fs-14">100%</h2>
+                    <p class="mb-0">Secured payment terms and commercial risk coverage</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-7 mb-lg-0">
+                  <div class="d-flex flex-column gap-6 pt-9 border-top" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <h2 class="mb-0 fs-14">365</h2>
+                    <p class="mb-0">Days active field trials across Mediterranean greenhouses</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#network" class="btn" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                <span class="btn-text">Explore Our Network</span>
+                <iconify-icon icon="lucide:arrow-up-right" class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="position-absolute bottom-0 start-0" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+        <img src="assets/images/backgrounds/stats-facts-bg.svg" alt="" class="img-fluid">
+      </div>
+    </section>
+
+    <!-- Distribution Networks Section -->
+    <section class="featured-projects py-5 py-lg-11 py-xl-12 bg-light-gray" id="network">
+      <div class="d-flex flex-column gap-5 gap-xl-11">
+        <div class="container">
+          <div class="row gap-7 gap-xl-0">
+            <div class="col-xl-4 col-xxl-4">
+              <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+                <span class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">02</span>
+                <hr class="border-line">
+                <span class="badge text-bg-dark">Commercial Channels</span>
+              </div>
+            </div>
+            <div class="col-xl-8 col-xxl-7">
+              <div class="row">
+                <div class="col-xxl-9">
+                  <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    <h2 class="mb-0">Commercial and distribution strength</h2>
+                    <p class="fs-5 mb-0">Direct access to growers, technical dealers, and industrial greenhouses across Türkiye through structured regional operations.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="featured-projects-slider px-3">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="portfolio d-flex flex-column gap-6">
+                <div class="portfolio-img position-relative overflow-hidden">
+                  <img src="assets/images/portfolio/portfolio-img-1.jpg" alt="Biological Solutions" class="img-fluid">
+                </div>
+                <div class="portfolio-details d-flex flex-column gap-3">
+                  <h3 class="mb-0">Biological Solutions</h3>
+                  <div class="hstack gap-2">
+                    <span class="badge text-dark border">Bio-Inputs</span>
+                    <span class="badge text-dark border">Regional Distribution</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="portfolio d-flex flex-column gap-6">
+                <div class="portfolio-img position-relative overflow-hidden">
+                  <img src="assets/images/portfolio/portfolio-img-2.jpg" alt="Targeted Protection" class="img-fluid">
+                </div>
+                <div class="portfolio-details d-flex flex-column gap-3">
+                  <h3 class="mb-0">Targeted Protection</h3>
+                  <div class="hstack gap-2">
+                    <span class="badge text-dark border">Crop Protection</span>
+                    <span class="badge text-dark border">Technical Sales</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="portfolio d-flex flex-column gap-6">
+                <div class="portfolio-img position-relative overflow-hidden">
+                  <img src="assets/images/portfolio/portfolio-img-3.jpg" alt="Specialized Biostimulants" class="img-fluid">
+                </div>
+                <div class="portfolio-details d-flex flex-column gap-3">
+                  <h3 class="mb-0">Specialized Biostimulants</h3>
+                  <div class="hstack gap-2">
+                    <span class="badge text-dark border">Plant Nutrition</span>
+                    <span class="badge text-dark border">Microbial Inoculants</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Capabilities Section -->
+    <section class="services py-5 py-lg-11 py-xl-12 bg-dark" id="solutions">
+      <div class="container">
+        <div class="d-flex flex-column gap-5 gap-xl-10">
+          <div class="row gap-7 gap-xl-0">
+            <div class="col-xl-4 col-xxl-4">
+              <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+                <span class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">03</span>
+                <hr class="border-line bg-white">
+                <span class="badge text-dark bg-white">Capabilities</span>
+              </div>
+            </div>
+            <div class="col-xl-8 col-xxl-7">
+              <div class="row">
+                <div class="col-xxl-8">
+                  <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    <h2 class="mb-0 text-white">How We Operate</h2>
+                    <p class="fs-5 mb-0 text-white text-opacity-70">From global manufacturer validation to farm-gate execution, we provide an end-to-end commercial pipeline.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="services-tab">
+            <div class="row gap-5 gap-xl-0">
+              <div class="col-xl-4">
+                <div class="tab-content" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+                  <div class="tab-pane active" id="one" role="tabpanel" aria-labelledby="one-tab" tabindex="0">
+                    <img src="assets/images/services/services-img-1.jpg" alt="Biopesticides" class="img-fluid">
+                  </div>
+                  <div class="tab-pane" id="two" role="tabpanel" aria-labelledby="two-tab" tabindex="0">
+                    <img src="assets/images/services/services-img-2.jpg" alt="R&D Validation" class="img-fluid">
+                  </div>
+                  <div class="tab-pane" id="three" role="tabpanel" aria-labelledby="three-tab" tabindex="0">
+                    <img src="assets/images/services/services-img-3.jpg" alt="Secured Collection" class="img-fluid">
+                  </div>
+                  <div class="tab-pane" id="four" role="tabpanel" aria-labelledby="four-tab" tabindex="0">
+                    <img src="assets/images/services/services-img-4.jpg" alt="Greenhouse Market" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-8">
+                <div class="d-flex flex-column gap-5">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <li class="nav-item py-4 py-lg-8 border-top border-white border-opacity-10 d-flex align-items-center w-100" role="presentation">
+                      <div class="row w-100 align-items-center gx-3">
+                        <div class="col-lg-6 col-xxl-5">
+                          <button class="nav-link fs-10 fw-bold py-1 px-0 border-0 rounded-0 flex-shrink-0 active" id="one-tab" data-bs-toggle="tab" data-bs-target="#one" type="button" role="tab" aria-controls="one" aria-selected="true">Biopesticide Trials</button>
+                        </div>
+                        <div class="col-lg-6 col-xxl-7">
+                          <p class="text-white text-opacity-70 mb-0">Conducting targeted efficacy trials under commercial greenhouse conditions for biopesticides, microbials, and biostimulants.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item py-4 py-lg-8 border-top border-white border-opacity-10 d-flex align-items-center w-100" role="presentation">
+                      <div class="row w-100 align-items-center gx-3">
+                        <div class="col-lg-6 col-xxl-5">
+                          <button class="nav-link fs-10 fw-bold py-1 px-0 border-0 rounded-0 flex-shrink-0" id="two-tab" data-bs-toggle="tab" data-bs-target="#two" type="button" role="tab" aria-controls="two" aria-selected="false">Market Development (MD)</button>
+                        </div>
+                        <div class="col-lg-6 col-xxl-7">
+                          <p class="text-white text-opacity-70 mb-0">Translating scientific formulations into clear grower value propositions with local field development and technical positioning.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item py-4 py-lg-8 border-top border-white border-opacity-10 d-flex align-items-center w-100" role="presentation">
+                      <div class="row w-100 align-items-center gx-3">
+                        <div class="col-lg-6 col-xxl-5">
+                          <button class="nav-link fs-10 fw-bold py-1 px-0 border-0 rounded-0 flex-shrink-0" id="three-tab" data-bs-toggle="tab" data-bs-target="#three" type="button" role="tab" aria-controls="three" aria-selected="false">Secured Risk Model</button>
+                        </div>
+                        <div class="col-lg-6 col-xxl-7">
+                          <p class="text-white text-opacity-70 mb-0">Shielding international manufacturers from Turkish market volatility with structured payment terms and credit management.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item py-4 py-lg-8 border-top border-white border-opacity-10 d-flex align-items-center w-100" role="presentation">
+                      <div class="row w-100 align-items-center gx-3">
+                        <div class="col-lg-6 col-xxl-5">
+                          <button class="nav-link fs-10 fw-bold py-1 px-0 border-0 rounded-0 flex-shrink-0" id="four-tab" data-bs-toggle="tab" data-bs-target="#four" type="button" role="tab" aria-controls="four" aria-selected="false">Horticulture Focus</button>
+                        </div>
+                        <div class="col-lg-6 col-xxl-7">
+                          <p class="text-white text-opacity-70 mb-0">Specialized emphasis on Antalya’s intensive greenhouse horticulture and high-value export produce.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <a href="#contact" class="btn border border-white border-opacity-25" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    <span class="btn-text">Request Partnership</span>
+                    <iconify-icon icon="lucide:arrow-up-right" class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us py-5 py-lg-11 py-xl-12">
+      <div class="container">
+        <div class="row justify-content-between gap-5 gap-xl-0">
+          <div class="col-xl-3 col-xxl-3">
+            <div class="d-flex flex-column gap-7">
+              <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+                <span class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">04</span>
+                <hr class="border-line">
+                <span class="badge text-bg-dark">Why Meris</span>
+              </div>
+              <h2 class="mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Built for Reliability</h2>
+              <p class="mb-0 fs-5" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">We combine technical crop protection expertise with commercial discipline to deliver dependable biosolution launches.</p>
+            </div>
+          </div>
+          <div class="col-xl-9 col-xxl-8">
+            <div class="row">
+              <div class="col-lg-4 mb-7 mb-lg-0">
+                <div class="card position-relative overflow-hidden bg-primary h-100" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <div class="d-flex flex-column gap-3 position-relative z-1">
+                      <h4 class="mb-0 text-dark">Antalya Greenhouse Core</h4>
+                      <p class="mb-0 fs-6 text-dark">Direct access to the largest greenhouse basin in the Eastern Mediterranean for rapid product validation.</p>
+                    </div>
+                    <div class="position-relative z-1 pt-6">
+                      <h2 class="mb-0">100%</h2>
+                      <p class="mb-0">Agronomic focus</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-7 mb-lg-0">
+                <div class="card bg-dark h-100" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                  <div class="card-body d-flex flex-column gap-7 justify-content-between">
+                    <div>
+                      <h4 class="mb-2 text-white">Multi-Channel Network</h4>
+                      <p class="mb-0 text-white text-opacity-70">Deploying products simultaneously across leading regional distributors, key dealers, and corporate growers.</p>
+                    </div>
+                    <div>
+                      <h2 class="mb-0 text-white">Broad</h2>
+                      <p class="mb-0 text-white text-opacity-70">Distribution reach</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-7 mb-lg-0">
+                <div class="card border h-100 position-relative overflow-hidden" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                      <h4 class="mb-2 text-dark">Registration & Regulatory</h4>
+                      <p class="mb-0 text-dark">Accelerated licensing pathway under Turkish biostimulant and biosolution frameworks.</p>
+                    </div>
+                    <div class="pt-6">
+                      <h2 class="mb-0 text-dark">Speed</h2>
+                      <p class="mb-0 text-dark">Time-to-market advantage</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq py-5 py-lg-11 py-xl-12 bg-light-gray">
+      <div class="container">
+        <div class="d-flex flex-column gap-5 gap-xl-11">
+          <div class="row gap-7 gap-xl-0">
+            <div class="col-xl-4 col-xxl-4">
+              <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+                <span class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">05</span>
+                <hr class="border-line bg-white">
+                <span class="badge text-bg-dark">FAQ</span>
+              </div>
+            </div>
+            <div class="col-xl-8 col-xxl-7">
+              <div class="row">
+                <div class="col-xxl-9">
+                  <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    <h2 class="mb-0">Frequently Asked Questions</h2>
+                    <p class="fs-5 mb-0 text-opacity-70">Key details regarding our international partnerships, trial procedures, and commercial model.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-end">
+            <div class="col-xl-8">
+              <div class="accordion accordion-flush" id="accordionFlushExample" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-8 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
+                      What types of products does Meris Biosciences focus on?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body pt-0 fs-5 text-dark">We primarily focus on biological fungicides, bio-insecticides, microbial inoculants, root mycorrhizae, and high-performance biostimulants designed for residue-free farming.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-8 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+                      How are trial evaluations conducted?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body pt-0 fs-5 text-dark">All trial samples undergo structured trials in commercial greenhouses across Antalya to validate efficacy against local pest pressures and compatibility with local cultural practices.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-8 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree">
+                      How does Meris manage trade and currency risks?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body pt-0 fs-5 text-dark">We utilize strict credit control mechanisms and guaranteed collection protocols within our domestic networks, ensuring secure financial settlements with our global manufacturing partners.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="get-in-touch py-5 py-lg-11 py-xl-12" id="contact">
+      <div class="container">
+        <div class="d-flex flex-column gap-5 gap-xl-10">
+          <div class="row gap-7 gap-xl-0">
+            <div class="col-xl-4 col-xxl-4">
+              <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+                <span class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">06</span>
+                <hr class="border-line bg-white">
+                <span class="badge text-bg-dark">Partner With Us</span>
+              </div>
+            </div>
+            <div class="col-xl-8 col-xxl-7">
+              <div class="row">
+                <div class="col-xxl-8">
+                  <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    <h2 class="mb-0">Connect With Meris</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-between gap-7 gap-xl-0">
+            <div class="col-xl-5">
+              <p class="mb-4 fs-5" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+                Are you an international manufacturer of biosolutions seeking a reliable, growth-oriented partner in Türkiye? Let’s initiate technical evaluation and commercial collaboration.
+              </p>
+              <div class="d-flex flex-column gap-3 text-dark fs-6" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+                <div>
+                  <strong class="d-block mb-1">Direct Inquiries:</strong>
+                  <a href="mailto:aliciftcioglu.tr@gmail.com" class="text-dark fw-bold fs-5">aliciftcioglu.tr@gmail.com</a>
+                </div>
+                <div>
+                  <strong class="d-block mb-1">Office Address:</strong>
+                  <p class="mb-0 text-dark">Suite 16 07230, Guzeloluk 2107 No 29/1 Muratpasa Antalya Turkiye</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-7">
+              <form class="d-flex flex-column gap-7" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <div>
+                  <input type="text" class="form-control border-bottom border-dark" placeholder="Your Name & Company">
+                </div>
+                <div>
+                  <input type="email" class="form-control border-bottom border-dark" placeholder="Corporate Email">
+                </div>
+                <div>
+                  <textarea class="form-control border-bottom border-dark" placeholder="Product Portfolio / Trial Proposal Details" rows="3"></textarea>
+                </div>
+                <button type="button" class="btn w-100 justify-content-center">
+                  <span class="btn-text">Send Collaboration Request</span>
+                  <iconify-icon icon="lucide:arrow-up-right" class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark py-5 py-lg-11 py-xl-12">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 mb-8 mb-xl-0">
+          <div class="d-flex flex-column gap-6 pe-xl-5">
+            <h2 class="mb-0 text-white">Meris Biosciences</h2>
+            <p class="text-white text-opacity-70 mb-0">Bridging global bio-innovations with Mediterranean and Turkish agriculture.</p>
+            <div class="d-flex flex-column gap-3">
+              <a href="mailto:aliciftcioglu.tr@gmail.com" class="link-hover hstack gap-3 text-white fs-5">
+                <iconify-icon icon="lucide:arrow-up-right" class="fs-7 text-primary"></iconify-icon>
+                aliciftcioglu.tr@gmail.com
+              </a>
+              <div class="d-flex gap-3 text-white fs-6">
+                <iconify-icon icon="lucide:map-pin" class="fs-7 text-primary flex-shrink-0 mt-1"></iconify-icon>
+                <span>Suite 16 07230, Guzeloluk 2107 No 29/1 Muratpasa Antalya Turkiye</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 mb-8 mb-xl-0 text-xl-end d-flex flex-column justify-content-end">
+          <p class="mb-0 text-white text-opacity-70">© Meris Biosciences Tarım
